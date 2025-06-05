@@ -1,8 +1,4 @@
-
-
-
 const { v4: uuidv4 } = require("uuid");
-
 let ingestionQueue = []; // Priority queue
 let ingestionStore = {}; // Holds all ingestion requests and batches
 let interval = null;
@@ -67,7 +63,7 @@ function startQueueProcessor() {
   }, 5000); // one batch every 5s
 }
 
-let interval = null;
+//let interval = null;
 
 function startQueueProcessor() {
   if (interval) return;
